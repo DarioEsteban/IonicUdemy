@@ -1,0 +1,17 @@
+<ion-header no-border>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Pendientes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+    
+  <ion-list color="dark">
+    <ion-item color="dark" detail *ngFor='let wish of wishesService.listas'>
+      <ion-label>{{wish.title}}</ion-label>
+    </ion-item>
+  </ion-list>
+    
+</ion-content>
