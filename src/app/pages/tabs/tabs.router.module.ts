@@ -13,6 +13,10 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: '../tab1/tab1.module#Tab1PageModule'
+          },
+          { 
+            path: 'add',
+            loadChildren: '../add/add.module#AddPageModule' 
           }
         ]
       },
@@ -24,7 +28,7 @@ const routes: Routes = [
             loadChildren: '../tab2/tab2.module#Tab2PageModule'
           }
         ]
-      },
+      },      
       {
         path: '',
         redirectTo: '/tabs/tab1',
